@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./startgame.css";
-import { Button } from "../styled/buttons";
+import { Button } from "../styled/Buttons";
 const Startgame = ({ toggle }) => {
   return (
     <Container>

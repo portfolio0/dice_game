@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import "./App.css";
-import Startgame from "./components/startgame";
+import Startgame from "./components/Startgame";
 
 import HowToPlay from "./components/HowToPlay";
 import PlayComponent from "./components/Playcomponent";
