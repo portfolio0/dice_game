@@ -5,7 +5,7 @@ import NumberSelector from "./NumberSelector";
 import styled from "styled-components";
 import Rolldice from "./Rolldice";
 import { useState } from "react";
-import { Button, OutlineButton } from "../styled/buttons";
+import { Button, OutlineButton } from "../styled/Buttons";
 import Rules from "./Rules";
 
 const Playcomponent = () => {
