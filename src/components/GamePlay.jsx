@@ -1,4 +1,5 @@
 import React from "react";
+
 import Totalscore from "./totalscore";
 import NumberSelector from "./NumberSelector";
 import styled from "styled-components";
@@ -6,6 +7,7 @@ import Rolldice from "./Rolldice";
 import { useState } from "react";
 import { Button, OutlineButton } from "../styled/buttons";
 import Rules from "./Rules";
+
 const Gameplay = () => {
   const [score, setscore] = useState(0);
   const [selectedNumber, setSelectedNumber] = useState(null); //putting null
@@ -40,7 +42,6 @@ const Gameplay = () => {
   const resetscore = () => {
     setscore(0);
   };
-
   return (
     <Maincontainer>
       <div className="top_section">
