@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Buttons = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ export const Button = styled.button`
   }
 `;
 
-export const OutlineButton = styled(Button)`
+export const OutlineButton = styled(Buttons)`
   background-color: white;
   border: 1px solid black;
   color: black;

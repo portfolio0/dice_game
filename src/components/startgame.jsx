@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./startgame.css";
-import { Button } from "../styled/Buttons";
+import { Buttons } from "../styled/Buttons";
 const Startgame = ({ toggle }) => {
   return (
     <Container>
@@ -10,7 +10,7 @@ const Startgame = ({ toggle }) => {
       </div>
       <div>
         <h1>Dice Game</h1>
-        <Button onClick={toggle}>Play Now</Button>
+        <Buttons onClick={toggle}>Play Now</Buttons>
       </div>
     </Container>
   );

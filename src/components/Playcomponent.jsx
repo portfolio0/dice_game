@@ -5,7 +5,7 @@ import NumberSelector from "./NumberSelector";
 import styled from "styled-components";
 import Rolldice from "./Rolldice";
 import { useState } from "react";
-import { Button, OutlineButton } from "../styled/Buttons";
+import { Buttons, OutlineButton } from "../styled/Buttons";
 import Rules from "./Rules";
 
 const Playcomponent = () => {
@@ -56,9 +56,9 @@ const Playcomponent = () => {
       <Rolldice currentdice={currentdice} roledice={roledice} />
       <div className="btns">
         <OutlineButton onClick={resetscore}>Reset</OutlineButton>
-        <Button onClick={() => setshowrules((prev) => !prev)}>
+        <Buttons onClick={() => setshowrules((prev) => !prev)}>
           {showrules ? "Hide" : "Show"}Rules
-        </Button>
+        </Buttons>
       </div>
       {showrules && <Rules />}
     </Maincontainer>
