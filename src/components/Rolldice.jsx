@@ -7,8 +7,8 @@ const Rolldice = ({ roledice, currentdice }) => {
         <img
           // src={`/images/diceimg/dice_${currentdice}.png`}
 
-          src={`/images/diceimg/dice_${currentdice}.png`}
-          alt="Dice one"
+          src={`./dice_img/dice_${currentdice}.png`}
+          alt="Dice images"
           className="dice_img"
         />
       </div>

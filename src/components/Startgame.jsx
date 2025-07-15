@@ -6,7 +6,7 @@ const Startgame = ({ toggle }) => {
   return (
     <Container>
       <div>
-        <img src="./images/dice.webp" alt="dice image" className="main_dice" />
+        <img src="./dice.webp" alt="dice image" className="main_dice" />
       </div>
       <div>
         <h1>Dice Game</h1>
