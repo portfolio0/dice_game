@@ -75,7 +75,7 @@ Error generating stack: `+o.message+`
   height: 100vh;
   max-width: 1200px;
   justify-content: space-evenly;
-`,Im=({score:e})=>T.jsxs(Om,{children:[T.jsx("h1",{children:e}),T.jsx("p",{children:"Total Score"})]}),Om=qe.div`
+`,Im=()=>T.jsx("main",{children:T.jsx("div",{children:T.jsx("h4",{})})}),Om=({score:e})=>T.jsxs(Dm,{children:[T.jsx("h1",{children:e}),T.jsx("p",{children:"Total Score"})]}),Dm=qe.div`
   text-align: center;
   max-width: 200px;
   margin-left: 60px;
@@ -88,7 +88,7 @@ Error generating stack: `+o.message+`
     font-size: 20px;
     font-weight: 500px;
   }
-`,Dm=({seterror:e,error:t,selectedNumber:n,setSelectedNumber:r})=>{const l=[1,2,3,4,5,6],o=i=>{r(i),e("")};return T.jsxs(Mm,{children:[T.jsx("p",{className:"error",children:t}),T.jsx("div",{className:"flex",children:l.map((i,u)=>T.jsx(Fm,{isSelected:i==n,onClick:()=>o(i),children:i},u))}),T.jsx("p",{children:"Select Number"})]})},Mm=qe.div`
+`,Mm=({seterror:e,error:t,selectedNumber:n,setSelectedNumber:r})=>{const l=[1,2,3,4,5,6],o=i=>{r(i),e("")};return T.jsxs(Fm,{children:[T.jsx("p",{className:"error",children:t}),T.jsx("div",{className:"flex",children:l.map((i,u)=>T.jsx(Am,{isSelected:i==n,onClick:()=>o(i),children:i},u))}),T.jsx("p",{children:"Select Number"})]})},Fm=qe.div`
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -106,7 +106,7 @@ Error generating stack: `+o.message+`
     color: red;
     margin-bottom: 20px;
   }
-`,Fm=qe.div`
+`,Am=qe.div`
   width: 50px;
   height: 50px;
   border: 1px solid black;
@@ -120,7 +120,7 @@ Error generating stack: `+o.message+`
 
   cursor: pointer;
   background-color: ${e=>e.isSelected?"black":"white"};
-`,Am=({roledice:e,currentdice:t})=>T.jsxs(Um,{children:[T.jsx("div",{className:"dice",onClick:e,children:T.jsx("img",{src:`/images/diceimg/dice_${t}.png`,alt:"Dice one",className:"dice_img"})}),T.jsx("p",{children:"click on dice to roll"})]}),Um=qe.div`
+`,Um=({roledice:e,currentdice:t})=>T.jsxs(Bm,{children:[T.jsx("div",{className:"dice",onClick:e,children:T.jsx("img",{src:`/images/diceimg/dice_${t}.png`,alt:"Dice one",className:"dice_img"})}),T.jsx("p",{children:"click on dice to roll"})]}),Bm=qe.div`
   margin-top: 80px;
   display: flex;
   justify-content: center;
@@ -139,7 +139,7 @@ Error generating stack: `+o.message+`
     height: 200px;
     width: 200px;
   }
-`,Bm=()=>T.jsxs(Vm,{children:[T.jsx("h2",{children:"how to play the game"}),T.jsxs("div",{className:"taxt",children:[T.jsx("p",{children:"select any number"}),T.jsxs("p",{children:["after click on the dice if selected number is equal to dice number you will get same point as dice",""]}),T.jsx("p",{children:"if you get wrong guess then 2 points will be deducted"})]})]}),Vm=qe.div`
+`,Vm=()=>T.jsxs(Hm,{children:[T.jsx("h2",{children:"how to play the game"}),T.jsxs("div",{className:"taxt",children:[T.jsx("p",{children:"select any number"}),T.jsxs("p",{children:["after click on the dice if selected number is equal to dice number you will get same point as dice",""]}),T.jsx("p",{children:"if you get wrong guess then 2 points will be deducted"})]})]}),Hm=qe.div`
   background-color: lightpink;
   padding: 20px;
   max-width: 800px;
@@ -153,7 +153,7 @@ Error generating stack: `+o.message+`
   .text {
     margin-top: 24px;
   }
-`,Hm=()=>{const[e,t]=$e.useState(0),[n,r]=$e.useState(null),[l,o]=$e.useState(1),[i,u]=$e.useState(),[s,c]=$e.useState(!1),m=(y,g)=>Math.floor(Math.random()*(g-y)+y),h=()=>{if(!n){u("you have not selected any number!");return}const y=m(1,7);o(g=>y),n==y?t(g=>g+y):t(g=>g-2),r()},p=()=>{t(0)};return T.jsxs(Wm,{children:[T.jsxs("div",{className:"top_section",children:[T.jsx(Im,{score:e}),T.jsx(Dm,{error:i,seterror:u,selectedNumber:n,setSelectedNumber:r})]}),T.jsx(Am,{currentdice:l,roledice:h}),T.jsxs("div",{className:"btns",children:[T.jsx($m,{onClick:p,children:"Reset"}),T.jsxs(Yu,{onClick:()=>c(y=>!y),children:[s?"Hide":"Show","Rules"]})]}),s&&T.jsx(Bm,{})]})},Wm=qe.main`
+`,Wm=()=>{const[e,t]=$e.useState(0),[n,r]=$e.useState(null),[l,o]=$e.useState(1),[i,u]=$e.useState(),[s,c]=$e.useState(!1),m=(y,g)=>Math.floor(Math.random()*(g-y)+y),h=()=>{if(!n){u("you have not selected any number!");return}const y=m(1,7);o(g=>y),n==y?t(g=>g+y):t(g=>g-2),r()},p=()=>{t(0)};return T.jsxs(Qm,{children:[T.jsxs("div",{className:"top_section",children:[T.jsx(Om,{score:e}),T.jsx(Mm,{error:i,seterror:u,selectedNumber:n,setSelectedNumber:r})]}),T.jsx(Um,{currentdice:l,roledice:h}),T.jsxs("div",{className:"btns",children:[T.jsx($m,{onClick:p,children:"Reset"}),T.jsxs(Yu,{onClick:()=>c(y=>!y),children:[s?"Hide":"Show","Rules"]})]}),s&&T.jsx(Vm,{})]})},Qm=qe.main`
   .top_section {
     display: flex;
     justify-content: space-between;
@@ -166,4 +166,4 @@ Error generating stack: `+o.message+`
     align-items: center;
     gap: 8px;
   }
-`,Qm=()=>T.jsx("main",{children:T.jsx("div",{children:T.jsx("h4",{})})}),Km=()=>{const[e,t]=$e.useState(!1),n=()=>{t(r=>!r)};return T.jsxs(T.Fragment,{children:[e?T.jsx(Hm,{}):T.jsx(Lm,{toggle:n}),T.jsx(Qm,{})]})};$f(document.getElementById("root")).render(T.jsx($e.StrictMode,{children:T.jsx(Km,{})}));
+`,Km=()=>{const[e,t]=$e.useState(!1),n=()=>{t(r=>!r)};return T.jsxs(T.Fragment,{children:[e?T.jsx(Wm,{}):T.jsx(Lm,{toggle:n}),T.jsx(Im,{})]})};$f(document.getElementById("root")).render(T.jsx($e.StrictMode,{children:T.jsx(Km,{})}));

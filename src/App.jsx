@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "./App.css";
 import Startgame from "./components/startgame";
-import Gameplay from "./components/Gameplay";
+
 import HowToPlay from "./components/HowToPlay";
+import GamePlay from "./components/Gameplay";
 
 const App = () => {
   const [isgamestarted, setisgamestarted] = useState(false);
@@ -13,7 +14,7 @@ const App = () => {
   };
   return (
     <>
-      {isgamestarted ? <Gameplay /> : <Startgame toggle={togglegameplay} />}
+      {isgamestarted ? <GamePlay /> : <Startgame toggle={togglegameplay} />}
 
       <HowToPlay />
     </>
