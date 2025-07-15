@@ -8,7 +8,7 @@ import { useState } from "react";
 import { Button, OutlineButton } from "../styled/buttons";
 import Rules from "./Rules";
 
-const Gameplay = () => {
+const Playcomponent = () => {
   const [score, setscore] = useState(0);
   const [selectedNumber, setSelectedNumber] = useState(null); //putting null
   const [currentdice, setcurrentdice] = useState(1);
@@ -65,7 +65,7 @@ const Gameplay = () => {
   );
 };
 
-export default Gameplay;
+export default Playcomponent;
 
 const Maincontainer = styled.main`
   .top_section {
